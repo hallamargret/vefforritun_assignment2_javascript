@@ -3,3 +3,42 @@
     height: 100 px;
     border: 1px solid black;
 }
+
+.underInput{
+    color: grey;
+    margin: 2px;
+}
+
+
+.boardClass{
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 5px;
+
+}
+
+
+#boardtitle{
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+}
+
+#boardcontainer{
+    border-top: 2px solid lightgray;
+
+}
+
+#delButt{
+    background-color: red;
+    float: left;
+    margin: 5px;
+}
+
+#myBtnCreate{
+    display: none;
+    
+}
