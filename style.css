@@ -10,35 +10,70 @@
 }
 
 
+#main_id{
+    word-wrap: break-word;
+}
+
+
+
 .boardClass{
     display: inline-block;
     text-align: center;
     width: 200px;
-    height: 200px;
+    height: auto;
     border: 2px solid black;
     margin: 5px;
 
+}
+
+#delButtTask{
+    background-color: rgb(254, 93, 93);
+    float: right;
+    margin: 5px;
+}
+
+
+.taskClass{
+    border: 1px solid grey;
+    width: 150px;
+    height: auto;
+    margin: 5px;
+    text-align: center;
+    background-color: rgb(252, 224, 200);
+    display: inline-block;
 }
 
 
 #boardtitle{
     padding: 10px;
     text-align: center;
+    display: inline-block;
     margin: 20px;
+    word-wrap: break-word;
 }
 
 #boardcontainer{
+    display: inline-block;
     border-top: 2px solid lightgray;
 
 }
 
-#delButt{
-    background-color: red;
+.delButt{
+    background-color: rgb(255, 117, 117);
     float: left;
     margin: 5px;
 }
 
-#myBtnCreate{
+#boardCreateBtn{
     display: none;
     
+}
+
+#CreateTaskBtn{
+    display: none;
+
+}
+
+#taskInputBox{
+    margin: 2px;
 }

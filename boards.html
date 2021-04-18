@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boards client-side application</title>
+    <title>JavaScript - Assignment 2 - Boards client-side application</title>
     <link rel="stylesheet" href="style.css">
     <!--<script src="https://unpkg.com/axios/dist/axios.min.js"></script>     this was from teacher
     Import Axios to use the axios object: https://cdnjs.com/libraries/axios 
@@ -16,16 +16,32 @@
     <header>
         <h2>Create a new board</h2>
         <input id ="inputbox" type="text" placeholder="Create new board">
-        <button id="myBtnCreate" onclick="createBoard()">Button</button>
+        <button id="boardCreateBtn" type ="button" onclick="createBoard()">Button</button>
         <div class="underInput">Enter a board name and press the 'Enter' key.</div>
         
     </header>
 
-    <main>
-        <div id="boardcontainer">
-            <!--Boards come here-->
+    <main id="main_id">
+        <div id="boardcontainer" >
+        <!--Template of board that can be copied-->
+            <div id="templateboard" class="boardClass" class="board_droppable" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <button id ="delButt" class="delButt" onclick="delBoard(this)">X</button>
+                <h2>template board</h2>
+            
+                <br/>
+                <div id="inputbox">
+                    <input id="taskInputBox" type="text" placeholder="Create new task">
+                    <button id="CreateTaskBtn" type ="button" onclick="createTask()">Create</button>
+                </div>
+            </div>
+            <!--Template of Task that can be copied-->
+            <div id="templateTask" class="taskClass" draggable="true" ondragstart="drag(event)">
+                <button id="delButtTask" onclick="deleteTask(id)">X</button>
+                <p>template task</p>
+            </div>
+            <!-- New boards that are created come here-->
         </div>
-
+         
     </main>
 
     <script src="app.js"></script>
